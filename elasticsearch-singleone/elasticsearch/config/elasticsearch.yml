@@ -6,7 +6,8 @@ path.data: /usr/share/elasticsearch/data
 path.logs: /usr/share/elasticsearch/logs
 # 快照存储路径
 path.repo: /usr/share/elasticsearch/repo
-bootstrap.memory_lock: true
+# 启动时不检查 memlock 限制
+bootstrap.memory_lock: false
 network.host: 0.0.0.0
 http.port: 9200
 # 集群节点列表，配置为节点地址
