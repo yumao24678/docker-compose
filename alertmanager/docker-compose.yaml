@@ -7,7 +7,6 @@ services:
     deploy:
       resources:
         limits:
-          cpus: "2"
           memory: 300M
     network_mode: host
     # ports:
