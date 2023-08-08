@@ -37,10 +37,10 @@ scrape_configs:
         - __name__
         regex: "go_.*"
         action: drop
-    ## prometheus 配置 basic 认证之后拉取指标配置中需要配置认证信息，否则无法拉取
-    # basic_auth:
-    #   username: admin
-    #   password: "litu.QuWEmYMZDbwv"
+    ## prometheus 配置 basic 认证之后拉取自己的指标配置中需要配置认证信息，否则无法拉取
+    basic_auth:
+      username: admin
+      password: "X2j6bCS0t33Lo78"
   ## 监控 alertmanager
   - job_name: "alertmanager"
     static_configs:
