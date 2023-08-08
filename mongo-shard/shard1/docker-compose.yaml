@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  mongo-shard1:
+    image: mongo:6.0.6
+    restart: always
+    # entrypoint: /bin/bash
+    # command:
+    #   - -c
+    #   - "tail -f /dev/null"
+    command:
+      - "--config"
+      - "/etc/mongo/mongod.conf"
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: mongoadmin
+    #   MONGO_INITDB_ROOT_PASSWORD: mongo.123
+    network_mode: host
+    # ports:
+    #   - 27017:27017
+    volumes:
+      - /usr/share/zoneinfo/Asia/Shanghai:/etc/localtime:ro
+      - ./data/db:/data/db
+      - ./data/configdb:/data/configdb
+      # - ./data:/data
+      - ./mongo:/etc/mongo
