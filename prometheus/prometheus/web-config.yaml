@@ -1,0 +1,3 @@
+# 配置 basic 基本 web 认证 ( htpasswd -nB admin, 此处的密码为 admin.123 )
+# basic_auth_users:
+#   admin: $2y$05$LA6pmdB9/XJ8wQ5k3oN/buUMsXtYjtg/Ywz9zZinApmpsFzkaGnlS
