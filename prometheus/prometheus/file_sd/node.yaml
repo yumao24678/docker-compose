@@ -2,6 +2,7 @@
 #   - 172.5.1.75:9100
 #   - 172.5.1.51:9100
 #   labels:
+#     hostname: instance-9
 #     zone: yuenan
 
 # - targets:
